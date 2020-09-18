@@ -19,7 +19,7 @@ exports.signup = (req, res, next) => {
                 user.save().then((userCreated) => {
                     res.status(200).json({
                         error: false,
-                        message: 'New user is created is successfully.',
+                        message: 'New user created successfully.',
                         data: userCreated
                     });
                 })
@@ -55,8 +55,9 @@ exports.login = async (req, res, next) => {
                 if (result) {
 
                     let token = jwt.sign({
-                        user: found.email,
-                        id: found._id
+                        name: `${found.firstName} ${found.lastName}`,
+                        email: found.email,
+                        _id: found._id
                     }, process.env.SECRET_KEY, {expiresIn: process.env.EXPIRY});
 
                     const responseBack = {...found};
@@ -77,6 +78,31 @@ exports.login = async (req, res, next) => {
 
         } else {
             res.status(404).json({error: true, message: 'No user exists against this email address.'});
+        }
+
+    } catch (exception) {
+        res.status(400).json({error: true, message: exception.message});
+    }
+
+};
+
+exports.getProfile = (req, res, next) => {
+
+    try {
+        const token = req.headers['access-token'];
+
+        if (token) {
+            jwt.verify(token, process.env.SECRET_KEY, function (err, tokenData) {
+
+                if (err) {
+                    res.status(401).json({error: true, message: 'Token is incorrect.'});
+                } else {
+                    res.status(200).json({error: false, message: 'Access granted.', data: {name: tokenData.name}});
+                }
+
+            });
+        } else {
+            res.status(401).json({error: true, message: 'No token found: Access denied.'});
         }
 
     } catch (exception) {
