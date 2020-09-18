@@ -15,6 +15,11 @@ exports.signup = (req, res, next) => {
             } else {
                 requestBody.password = hash;
 
+                // saving image path
+                if (req.file) {
+                    requestBody.image = req.file.filename;
+                }
+
                 const user = new UserModel(requestBody);
                 user.save().then((userCreated) => {
                     res.status(200).json({

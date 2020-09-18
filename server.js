@@ -25,6 +25,7 @@ mongoose.connect(connectionString, {
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use(express.static('uploads'));
 
 
 // routes
