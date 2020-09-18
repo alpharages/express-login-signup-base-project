@@ -89,21 +89,13 @@ exports.login = async (req, res, next) => {
 exports.getProfile = (req, res, next) => {
 
     try {
+
         const token = req.headers['access-token'];
 
-        if (token) {
-            jwt.verify(token, process.env.SECRET_KEY, function (err, tokenData) {
+        const tokenData = jwt.verify(token, process.env.SECRET_KEY);
 
-                if (err) {
-                    res.status(401).json({error: true, message: 'Token is incorrect.'});
-                } else {
-                    res.status(200).json({error: false, message: 'Access granted.', data: {name: tokenData.name}});
-                }
+        res.status(200).json({error: false, message: 'Access granted.', data: {name: tokenData.name}});
 
-            });
-        } else {
-            res.status(401).json({error: true, message: 'No token found: Access denied.'});
-        }
 
     } catch (exception) {
         res.status(400).json({error: true, message: exception.message});
