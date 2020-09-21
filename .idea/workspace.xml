@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f027bb36-d409-47e8-8c8d-a1600b902643" name="Default Changelist" comment="image uplaoding allowed">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.route.js" afterDir="false" />
+    <list default="true" id="f027bb36-d409-47e8-8c8d-a1600b902643" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
       <workItem from="1600336327453" duration="14930000" />
       <workItem from="1600425463188" duration="12402000" />
       <workItem from="1600681115954" duration="113000" />
-      <workItem from="1600681239186" duration="2417000" />
+      <workItem from="1600681239186" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="Private route api is created">
       <created>1600433587941</created>
@@ -82,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600447138851</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="image uplaoding: some changes">
+      <created>1600687226558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600687226558</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,17 +96,18 @@
     <MESSAGE value="Private route api is created" />
     <MESSAGE value="middleware added" />
     <MESSAGE value="image uplaoding allowed" />
-    <option name="LAST_COMMIT_MESSAGE" value="image uplaoding allowed" />
+    <MESSAGE value="image uplaoding: some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="image uplaoding: some changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600337581545">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1600337581545" />
-    <state x="2185" y="88" key="CommitChangelistDialog2" timestamp="1600686906288">
+    <state x="2185" y="88" key="CommitChangelistDialog2" timestamp="1600687225801">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2185" y="88" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1600686906288" />
+    <state x="2185" y="88" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1600687225801" />
     <state x="2340" y="274" key="FileChooserDialogImpl" timestamp="1600681245824">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
@@ -111,9 +116,9 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2061" y="164" width="1021" height="711" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1600339982012" />
-    <state x="2152" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600447147047">
+    <state x="2152" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600687230347">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2152" y="252" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1600447147047" />
+    <state x="2152" y="252" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1600687230347" />
   </component>
 </project>
