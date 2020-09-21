@@ -1,3 +1,13 @@
 # Dependency directories
 node_modules/
 uploads/
+
+# dotenv environment variables file
+.env
+
+# IDE
+.idea
+
+# Unnecessary Files
+/package-lock.json
+
