@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f027bb36-d409-47e8-8c8d-a1600b902643" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <workItem from="1600336327453" duration="14930000" />
       <workItem from="1600425463188" duration="12402000" />
       <workItem from="1600681115954" duration="113000" />
-      <workItem from="1600681239186" duration="2994000" />
+      <workItem from="1600681239186" duration="3085000" />
     </task>
     <task id="LOCAL-00001" summary="Private route api is created">
       <created>1600433587941</created>
